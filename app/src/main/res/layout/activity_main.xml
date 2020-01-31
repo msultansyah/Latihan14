@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:hint="Last Name"
+        android:gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:hint="First Name"
+        android:gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etLastName"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/btLoad"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/etFirstName"
+        android:layout_marginTop="16dp"
+        android:layout_alignStart="@+id/etFirstName"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/etFirstName"
+        android:layout_marginTop="16dp"
+        android:layout_alignEnd="@+id/etFirstName"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nama Diatas"
+        android:textColor="#000"
+        android:layout_below="@+id/btLoad"
+        android:layout_marginTop="60dp"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
